@@ -1,0 +1,5 @@
+elasticsearch:
+  host: 192.168.1.90
+  port: 9200
+  username: r2soft
+  password: r2soft
