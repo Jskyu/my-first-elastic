@@ -1,6 +1,8 @@
 package com.first.elastic.config;
 
 import co.elastic.clients.elasticsearch.ElasticsearchClient;
+import co.elastic.clients.transport.TransportOptions;
+import org.elasticsearch.client.RestClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -64,5 +66,27 @@ public class ElasticSearchConfig extends ElasticsearchConfiguration {
         template.setRefreshPolicy(refreshPolicy());
 
         return template;
+    }
+
+    public ElasticSearchConfig() {
+        super();
+    }
+
+    @Override
+    @Bean
+    public RestClient restClient(ClientConfiguration clientConfiguration) {
+        return super.restClient(clientConfiguration);
+    }
+
+    @Override
+    @Bean
+    public ElasticsearchClient elasticsearchClient(RestClient restClient) {
+        return super.elasticsearchClient(restClient);
+    }
+
+    @Override
+    @Bean
+    public TransportOptions transportOptions() {
+        return super.transportOptions();
     }
 }
