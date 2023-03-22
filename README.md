@@ -3,6 +3,7 @@
 
 ### Tech
 - `Java 11`
+- `Spring Boot 2.7.9`
 - `Elasticsearch 8.6.2`
 
 __built with__
@@ -16,7 +17,8 @@ minimum_wire_compatibility_version: 7.17.0,
 minimum_index_compatibility_version: 7.0.0
 ```
 
-### [인증키 관련 설정](https://github.com/Jskyu/my-first-elastic/tree/master/key)
+### ETC
+* [인증키 관련 설정](https://github.com/Jskyu/my-first-elastic/tree/master/key)
 
 ## Made
 © [Jskyu](https://github.com/Jskyu)
