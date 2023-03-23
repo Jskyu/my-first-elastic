@@ -19,6 +19,15 @@ minimum_wire_compatibility_version: 7.17.0,
 minimum_index_compatibility_version: 7.0.0
 ```
 
+## API
+* `GET  /api/person`
+* `GET  /api/person/{id}`
+* `POST /api/person body:id,name`
+* `GET  /api/person/gpt/`
+* `GET  /api/person/gpt/{id}`
+* `POST /api/person/gpt body:id,name`
+
+
 ## ETC
 * [인증키 관련 설정](https://github.com/Jskyu/my-first-elastic/tree/master/key)
 
