@@ -27,4 +27,17 @@ public class Person {
         Person person = (Person) o;
         return Objects.equals(id, person.id) && Objects.equals(name, person.name);
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
+    public String toJsonString(){
+        return "{\"id\":\"" + id + "\"," +
+                "\"name\":\"" + name + "\"}";
+    }
 }

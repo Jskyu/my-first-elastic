@@ -12,7 +12,6 @@ __built with__
 
 ## Elasticsearch Detail info
 ```
-
 oracle-jdk: 11
 version: 8.6.2
 lucene_version: 9.4.2,
